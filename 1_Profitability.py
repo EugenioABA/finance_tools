@@ -9,7 +9,7 @@ import plotly.figure_factory as ff
 st.image('https://upload.wikimedia.org/wikipedia/commons/7/7d/Abawikilogo.png', width=70)
 
 st.title('Monte Carlo Simulation')
-st.caption('Developed by Eugenio Gallastegui | Sr. Data Scientist')
+st.caption('Developed by Eugenio Gallastegui')
 
 
 
