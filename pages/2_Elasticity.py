@@ -6,7 +6,7 @@ st.set_option('deprecation.showPyplotGlobalUse', False)
 st.image('https://upload.wikimedia.org/wikipedia/commons/7/7d/Abawikilogo.png', width=70)
 
 st.title("Price Elasticity of Demand")
-st.caption('Developed by Eugenio Gallastegui | Sr. Data Scientist')
+st.caption('Developed by Eugenio Gallastegui')
 
 #subheader
 st.subheader("1. Enter the previous membership price and demand")
