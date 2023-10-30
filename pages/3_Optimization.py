@@ -5,7 +5,7 @@ import streamlit as st
 st.image('https://upload.wikimedia.org/wikipedia/commons/7/7d/Abawikilogo.png', width=70)
 
 st.title("Price Optimization")
-st.caption('Developed by Eugenio Gallastegui | Sr. Data Scientist')
+st.caption('Developed by Eugenio Gallastegui')
 
 #subheader
 st.subheader("Work in progress")
