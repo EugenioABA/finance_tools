@@ -19,9 +19,9 @@ st.subheader("1. Enter the previous membership price and demand")
 col1, col2 = st.columns([1,1])
 
 # price of good
-price_1 = col1.number_input("Enter previous membership price: $", value=250, step=1)
+price_1 = col1.number_input("Enter previous membership price: $", value=50, step=10)
     # quantity of good
-quantity_1 = col2.number_input("Enter previous membership demand: ", value=175000, step=1000)
+quantity_1 = col2.number_input("Enter previous membership demand: ", value=3454, step=500)
     #revenue 1
 revenue_1 = price_1 * quantity_1
 
@@ -32,9 +32,9 @@ st.subheader("2. Enter the current membership price and demand")
 col3, col4 = st.columns([1,1])
 
     # new price of good
-price_2 = col3.number_input("Enter current membership price: $", value=225, step=1)
+price_2 = col3.number_input("Enter current membership price: $", value=75, step=10)
     # new quantity of good
-quantity_2 = col4.number_input("Enter current membership demand: ", value=195000, step=1000)
+quantity_2 = col4.number_input("Enter current membership demand: ", value=3316, step=500)
     #revenue 2
 revenue_2 = price_2 * quantity_2
     # calculate percentage change in price
@@ -135,7 +135,7 @@ ax1.text(price_1, quantity_1, f'  Q1 = {quantity_1}', verticalalignment='bottom'
 ax1.text(price_2, quantity_2, f'  Q2 = {quantity_2}', verticalalignment='bottom', horizontalalignment='right')
 ax1.xaxis.set_major_locator(MaxNLocator(integer=True, nbins=25))
 ax1.yaxis.set_major_locator(MaxNLocator(integer=True, nbins=25))
-ax1.set_title('Demand Curve', fontsize=20)
+ax1.set_title('Demand Curve', fontsize=24)
 ax1.set_xlabel('Price', fontsize=16)
 ax1.set_ylabel('Quantity Demanded', fontsize=16)
 ax1.grid(True)
@@ -154,7 +154,7 @@ ax2.text(optimal_price, optimal_price * (slope * optimal_price + intercept), f' 
 ax2.get_yaxis().set_major_formatter(FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
 ax2.xaxis.set_major_locator(MaxNLocator(integer=True, nbins=25))
 ax2.yaxis.set_major_locator(MaxNLocator(integer=True, nbins=25))
-ax2.set_title('Revenue Curve', fontsize=20)
+ax2.set_title('Revenue Curve', fontsize=24)
 ax2.set_xlabel('Price', fontsize=16)
 ax2.set_ylabel('Total Revenue', fontsize=16)
 ax2.grid(True)
