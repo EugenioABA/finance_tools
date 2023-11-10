@@ -122,7 +122,7 @@ extended_revenues = extended_prices * extended_demands
 
 # Plot the demand and revenue curves
 plt.figure(figsize=(14, 20))
-plt.rcParams['font.size'] = 18  # You can adjust the size as needed
+#plt.rcParams['font.size'] = 18  # You can adjust the size as needed
 
 # Demand curve plot
 ax1 = plt.subplot(2, 1, 1)
