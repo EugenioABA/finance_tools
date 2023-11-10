@@ -78,7 +78,7 @@ y = [quantity_1, quantity_2] # create a list of the y values
 
 x_min, x_max = min(x) - 0.15 * min(x), max(x) + 1.5 * max(x) # add 15% to the max and min values and use that as the range for the x axis
 y_min, y_max = min(y) - 0.15 * min(y), max(y) + 1.5 * max(y) # add 15% to the max and min values and use that as the range for the y axis
-plt.rcParams["figure.figsize"] = (8,8) # set the size of the plot in inches
+plt.rcParams["figure.figsize"] = (10,10) # set the size of the plot in inches
 #plt.figure(figsize=(14, 20))
 plt.plot(x, y) # plot the line
 plt.plot(price_1, quantity_1, 'ro') # plot the points for the old price and quantity
@@ -123,7 +123,6 @@ extended_revenues = extended_prices * extended_demands
 
 # Plot the demand and revenue curves
 plt.figure(figsize=(14, 20))
-#plt.rcParams['font.size'] = 18  # You can adjust the size as needed
 
 # Demand curve plot
 ax1 = plt.subplot(2, 1, 1)
