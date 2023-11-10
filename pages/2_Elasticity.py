@@ -92,9 +92,9 @@ plt.text(price_1, y_min, f"Price: ${price_1:,.0f}") # add the text for the old p
 plt.text(x_min, quantity_1, f"Demand: {quantity_1:,.0f}") # add the text for the old quantity on the y axis
 plt.text(price_2, y_min, f"Price: ${price_2:,.0f}") # add the text for the new price on the x axis
 plt.text(x_min, quantity_2, f"Demand: {quantity_2:,.0f}") # add the text for the new quantity on the y axis
-plt.xlabel("Membership Price ($)") # add the x axis label
-plt.ylabel("Membership Demand") # add the y axis label
-plt.title("Price Elasticity of Demand") # add the title # show the plot
+plt.xlabel("Membership Price ($)", fontsize=16) # add the x axis label
+plt.ylabel("Membership Demand", fontsize=16) # add the y axis label
+plt.title("Price Elasticity of Demand", fontsize=20) # add the title # show the plot
 st.pyplot() # show the plot in streamlit
 
 
@@ -135,7 +135,7 @@ ax1.text(price_1, quantity_1, f'  Q1 = {quantity_1}', verticalalignment='bottom'
 ax1.text(price_2, quantity_2, f'  Q2 = {quantity_2}', verticalalignment='bottom', horizontalalignment='right')
 ax1.xaxis.set_major_locator(MaxNLocator(integer=True, nbins=25))
 ax1.yaxis.set_major_locator(MaxNLocator(integer=True, nbins=25))
-ax1.set_title('Demand Curve', fontsize=18)
+ax1.set_title('Demand Curve', fontsize=20)
 ax1.set_xlabel('Price', fontsize=16)
 ax1.set_ylabel('Quantity Demanded', fontsize=16)
 ax1.grid(True)
@@ -154,7 +154,7 @@ ax2.text(optimal_price, optimal_price * (slope * optimal_price + intercept), f' 
 ax2.get_yaxis().set_major_formatter(FuncFormatter(lambda x, loc: "{:,}".format(int(x))))
 ax2.xaxis.set_major_locator(MaxNLocator(integer=True, nbins=25))
 ax2.yaxis.set_major_locator(MaxNLocator(integer=True, nbins=25))
-ax2.set_title('Revenue Curve', fontsize=18)
+ax2.set_title('Revenue Curve', fontsize=20)
 ax2.set_xlabel('Price', fontsize=16)
 ax2.set_ylabel('Total Revenue', fontsize=16)
 ax2.grid(True)
