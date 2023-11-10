@@ -102,7 +102,23 @@ st.pyplot() # show the plot in streamlit
 ####################################################################################################################################
 ####    Curves
 ####################################################################################################################################
+#columns
+col5, col6 = st.columns([1,1])
+col7, col8 = st.columns([1,1])
 
+col5.info(f"Revenue under previous price model was ${revenue_1:,.0f}")
+
+if revenue_2 > revenue_1:
+    col7.success(f"Revenue under the new price model was ${revenue_2:,.0f}")
+else:
+    col7.error(f"Revenue under the new price model was ${revenue_2:,.0f}")
+
+#revenue change
+revenue_change = revenue_2 - revenue_1
+#revenue change percentage
+revenue_change_percentage = ((revenue_2 - revenue_1) / revenue_1) * 100
+
+col8.metric(label="Revenue Change", value=f"${revenue_change:,.0f}", delta=f"{revenue_change_percentage:,.1f}%", delta_color="normal")
 # Calculate the price elasticity of demand
 price_elasticity_of_demand = (quantity_2 - quantity_1) / ((quantity_2 + quantity_1) / 2) / (price_2 - price_1) * (price_2 + price_1) / 2
 
