@@ -3,7 +3,6 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 from matplotlib.ticker import MaxNLocator
 import numpy as np
-plt.rcParams['font.size'] = 12  # You can adjust the size as needed
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
@@ -123,6 +122,7 @@ extended_revenues = extended_prices * extended_demands
 
 # Plot the demand and revenue curves
 plt.figure(figsize=(14, 20))
+plt.rcParams['font.size'] = 18  # You can adjust the size as needed
 
 # Demand curve plot
 ax1 = plt.subplot(2, 1, 1)
