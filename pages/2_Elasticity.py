@@ -3,6 +3,7 @@ import matplotlib.pyplot as plt
 from matplotlib.ticker import FuncFormatter
 from matplotlib.ticker import MaxNLocator
 import numpy as np
+plt.rcParams['font.size'] = 12  # You can adjust the size as needed
 
 st.set_option('deprecation.showPyplotGlobalUse', False)
 
