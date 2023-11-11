@@ -89,10 +89,10 @@ plt.plot([price_2, price_2], [y_min, quantity_2], 'r--') # plot the dashed lines
 plt.plot([x_min, price_2], [quantity_2, quantity_2], 'r--') # plot the dashed linnes to connect the new price and quantity
 plt.text(price_1, quantity_1, f"(${price_1:,.0f}, {quantity_1:,.0f})") # add the text for the old price and quantity at the point
 plt.text(price_2, quantity_2, f"(${price_2:,.0f}, {quantity_2:,.0f})") # add the text for the new price and quantity at the point
-plt.text(price_1, y_min, f"Price: ${price_1:,.0f}") # add the text for the old price on the x axis
-plt.text(x_min, quantity_1, f"Demand: {quantity_1:,.0f}") # add the text for the old quantity on the y axis
-plt.text(price_2, y_min, f"Price: ${price_2:,.0f}") # add the text for the new price on the x axis
-plt.text(x_min, quantity_2, f"Demand: {quantity_2:,.0f}") # add the text for the new quantity on the y axis
+plt.text(price_1, y_min, f"P1: ${price_1:,.0f}", fontsize=12) # add the text for the old price on the x axis
+plt.text(x_min, quantity_1, f"Q1: {quantity_1:,.0f}", fontsize=12) # add the text for the old quantity on the y axis
+plt.text(price_2, y_min, f"P2: ${price_2:,.0f}", fontsize=12) # add the text for the new price on the x axis
+plt.text(x_min, quantity_2, f"P1: {quantity_2:,.0f}", fontsize=12) # add the text for the new quantity on the y axis
 plt.xlabel("Membership Price ($)", fontsize=16) # add the x axis label
 plt.ylabel("Membership Demand", fontsize=16) # add the y axis label
 plt.title("Price Elasticity of Demand", fontsize=20) # add the title # show the plot
