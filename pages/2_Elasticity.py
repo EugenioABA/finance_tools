@@ -54,22 +54,22 @@ st.info(f"Price elasticity of demand: {round(price_elasticity,1)}. Meaning that 
 st.info(f"When price changes by {round(price_change * 100,0):,.0f}%, the demand changes by {round(quantity_change * 100,0):,.0f}%.")
 
 #columns
-col5, col6 = st.columns([1,1])
-col7, col8 = st.columns([1,1])
+#col5, col6 = st.columns([1,1])
+#col7, col8 = st.columns([1,1])
 
-col5.info(f"Revenue under previous price model was ${revenue_1:,.0f}")
+#col5.info(f"Revenue under previous price model was ${revenue_1:,.0f}")
 
-if revenue_2 > revenue_1:
-    col7.success(f"Revenue under the new price model was ${revenue_2:,.0f}")
-else:
-    col7.error(f"Revenue under the new price model was ${revenue_2:,.0f}")
+#if revenue_2 > revenue_1:
+    #col7.success(f"Revenue under the new price model was ${revenue_2:,.0f}")
+#else:
+    #col7.error(f"Revenue under the new price model was ${revenue_2:,.0f}")
 
 #revenue change
-revenue_change = revenue_2 - revenue_1
+#revenue_change = revenue_2 - revenue_1
 #revenue change percentage
-revenue_change_percentage = ((revenue_2 - revenue_1) / revenue_1) * 100
+#revenue_change_percentage = ((revenue_2 - revenue_1) / revenue_1) * 100
 
-col8.metric(label="Revenue Change", value=f"${revenue_change:,.0f}", delta=f"{revenue_change_percentage:,.1f}%", delta_color="normal")
+#col8.metric(label="Revenue Change", value=f"${revenue_change:,.0f}", delta=f"{revenue_change_percentage:,.1f}%", delta_color="normal")
 
 
  #now plot the curve of price elasticity of demand
