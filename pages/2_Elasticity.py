@@ -181,7 +181,7 @@ plt.tight_layout()
 st.pyplot()
 
 # Output the calculated values
-st.info(f"Price Elasticity of Demand: {price_elasticity_of_demand}")
-st.info(f"Slope: {slope}")
-st.info(f"Intercept: {intercept}")
+#st.info(f"Price Elasticity of Demand: {price_elasticity_of_demand}")
+#st.info(f"Slope: {slope}")
+#st.info(f"Intercept: {intercept}")
 
